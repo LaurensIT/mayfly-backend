@@ -1,8 +1,8 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "Dratone/mayfly-backend",
+	"description": "Backend service for the mayfly password sharing system.",
 	"keywords": ["framework", "laravel"],
-	"license": "MIT",
+	"license": "GPL",
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
