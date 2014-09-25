@@ -29,7 +29,7 @@ class RsaController extends BaseController {
         // Todo: Rename this function.
 	public function getsession()
 	{
-                if (Config::Get('database.connections.' . Config::Get('database.default') . 'driver') == 'mysql')
+                if (Config::Get('database.connections.' . Config::Get('database.default') . '.driver') == 'mysql')
                 {
                     $pregen = Pregen::orderBy(DB::raw('RAND()'))->limit(1)->first();
                 } else {
