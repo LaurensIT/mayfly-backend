@@ -40,12 +40,20 @@ class Monitoring extends Command {
 		$num = Pregen::Where('valid_untill','>',date('Y-m-d H:i:s'))->count();
 		if ($num < 25)
 		{
-			echo "Alert:   ";
+			echo "Critical - Pregenned keys to low:  ";
+			echo $num . " in queue\n";
+			exit(2);
+		}
+		if ($num < 75)
+		{
+			echo "Warning - Pregenned keys to low:  ";
+			echo $num . " in queue\n";
+			exit(1);
 		} else {
 			echo "OK:      ";
+			echo $num . " in queue\n";
+			exit(0);
 		}
-		echo $num . " in queue\n";
-
         }
 
         /**

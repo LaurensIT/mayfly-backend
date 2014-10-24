@@ -81,7 +81,7 @@ class CreateKeys extends Command {
 				$m->public = $pubKey;
 				$m->private = $privKey;
 				$m->password = $randPass;
-				$m->valid_untill = date('Y-m-d H:i:s',time() + 7200);
+				$m->valid_untill = date('Y-m-d H:i:s',time() + 18000);
 				$m->save();
 				if ($count  > 20) {
 					for($n =0; $n < 1; $n++)
