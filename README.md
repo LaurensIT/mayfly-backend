@@ -29,7 +29,7 @@ composer update
 Edit bootstrap/start.php and add a production environment with your servers hostname.
 ```php
 $env = $app->detectEnvironment(array(
-	'production' => array('mayfly-web'),
+	'production' => array('mayfly-backend'),
 ));
 ```
 
